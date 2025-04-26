@@ -17,7 +17,7 @@ This table is created for the Mini Incident Management System to track incidents
 | State           | Choice (New, In Progress, Resolved, Closed) | Incident Status | Yes | No |
 | Assignment Group | Reference (sys_user_group) | Support team handling the incident  | No        | No        |
 | Assigned To     | Reference (sys_user) | Support individual assigned              | No        | No        |
-| Resolved By     | Reference (sys_user) | Person who resolved the incident         | No        | Yes       |
+| Resolved By     | String | Person who resolved the incident         | No        | Yes       |
 | Resolved At     | Date/Time           | Time when incident was resolved           | No        | Yes       |
 
 ## Special Behaviors:
