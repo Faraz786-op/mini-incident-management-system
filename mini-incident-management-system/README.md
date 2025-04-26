@@ -1,4 +1,4 @@
-Mini Incident Management System
+**Mini Incident Management System**
 A simple ServiceNow project built for learning and practicing Incident Management concepts.
 
 Features
