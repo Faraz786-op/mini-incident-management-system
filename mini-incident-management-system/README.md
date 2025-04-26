@@ -1,23 +1,28 @@
-**Mini Incident Management System**
+# Mini Incident Management System
 
-A simple ServiceNow project built for learning and practicing Incident Management concepts.
+## Overview
+This project is a small simulation of an Incident Management System built on ServiceNow platform.
 
-Features
-Custom Incident table
+## Table Structure
+- **Table Name**: Mini Incident [u_mini_incident]
+- **Important Fields**:
+  - Number (Auto-generated)
+  - Short Description
+  - Description
+  - Impact
+  - Urgency
+  - Priority (Calculated based on Impact & Urgency)
 
-Auto-generated Number field
+## UI Policies
+- Set fields to mandatory based on State changes.
+- Make fields read-only after closure.
 
-Dynamic UI Policies based on State
+## Business Rules
+- Auto-populate Number field.
+- Auto-set Priority based on Impact and Urgency.
 
-Business Rule for setting Resolved Information
+## Future Enhancements
+- Add Email Notifications.
+- Build SLA tracking.
 
-Email Notifications (coming soon)
-
-Project Status
-✅ Table Setup
-✅ Fields Created
-✅ UI Policies Implemented
-✅ Business Rule for Resolved Data
-
-Author
-Faraz S.
+---
