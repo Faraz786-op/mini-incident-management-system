@@ -13,10 +13,9 @@ This table is created for the Mini Incident Management System to track incidents
 | Description     | String             | Detailed description of the incident      | No        | No        |
 | Impact          | Choice (High, Moderate, Low) | Impact level                  | Yes       | No        |
 | Urgency         | Choice (High, Moderate, Low) | Urgency level                 | Yes       | No        |
-| Priority        | Integer             | Calculated from Impact + Urgency          | Yes       | Yes       |
+| Priority        | Choice (High, Moderate, Low) | Calculated from Impact + Urgency          | No       | Yes       |
 | State           | Choice (New, In Progress, Resolved, Closed) | Incident Status | Yes | No |
-| Assignment Group | Reference (sys_user_group) | Support team handling the incident  | No        | No        |
-| Assigned To     | Reference (sys_user) | Support individual assigned              | No        | No        |
+| Assigned To     | Reference (sys_user) | Support individual assigned              | Yes        | No        |
 | Resolved By     | String | Person who resolved the incident         | No        | Yes       |
 | Resolved At     | Date/Time           | Time when incident was resolved           | No        | Yes       |
 
