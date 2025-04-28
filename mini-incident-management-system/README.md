@@ -8,12 +8,12 @@ It covers basic Incident functionalities like creating incidents, assigning, res
 ## 🛠️ Features
 
 - Create and manage Mini Incidents.
-- Auto-generate Incident Number (MINC0001, MINC0002, etc.)
+- Auto-generate Incident Number (INC0010001, INC0010002, etc.)
 - Impact, Urgency, and automatic Priority calculation (1-High, 2-Moderate, 3-Low).
 - Business Rules to update resolved fields.
 - Email notification sent to "Assigned To" user.
 - Two reports created:
-  - Active Incidents
+  - Incidents Created per Day
   - Incidents by State
 - Dashboard displaying both reports.
 - GitHub version-controlled project with documentation and screenshots.
@@ -65,8 +65,8 @@ It covers basic Incident functionalities like creating incidents, assigning, res
 
 ## 📊 Reports Created
 
-- **Active Incidents Report**  
-  (List of all open Incidents)
+- **Incidents Created per Day Report**  
+  (List of all Incidents Created per Day)
 
 - **Incidents by State Report**  
   (Pie Chart showing Incident distribution per state)
@@ -76,7 +76,7 @@ It covers basic Incident functionalities like creating incidents, assigning, res
 ## 📈 Dashboard
 
 - **Mini Incident Dashboard** created showing:
-  - Active Incidents
+  - Incidents Created Day by Day
   - Incidents by State
 
 ---
