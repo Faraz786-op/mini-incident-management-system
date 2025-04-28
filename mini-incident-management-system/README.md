@@ -85,22 +85,29 @@ It covers basic Incident functionalities like creating incidents, assigning, res
 ### 1. Table Structure
 ![Table Structure](screenshots/table_structure.png)
 
-### 2. Form View
-![Form View](screenshots/form_view.png)
+### 2. List View
+![Form View](screenshots/incident_list_view.png)
 
-### 3. Business Rules
+### 3. Form View
+![Form View](screenshots/incident_form_view.png)
+
+### 4. Business Rules
 ![Business Rules](screenshots/business_rules.png)
+- **If State==Resolved**
+  ![Incidents Per Day](screenshots/br_set_resolved.png)
+- **Setting Priority based on Urgency & Impact**
+  ![Incidents Per Day](screenshots/br_priority.png)
 
-### 4. Reports
-- **Active Incidents**
-  ![Active Incidents](screenshots/reports_active_incidents.png)
+### 5. Reports
 - **Incidents by State**
   ![Incidents by State](screenshots/reports_by_state.png)
+- **Incidents Day by Day**
+  ![Incidents Per Day](screenshots/reports_incidents_per_day.png)
 
-### 5. Dashboard View
+### 6. Dashboard View
 ![Dashboard](screenshots/dashboard_view.png)
 
-### 6. Email Notification Log
+### 7. Email Notification Log
 ![Email Log](screenshots/email_log.png)
 
 ---
