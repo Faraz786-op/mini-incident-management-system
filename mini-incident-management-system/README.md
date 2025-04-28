@@ -111,11 +111,11 @@ It covers basic Incident functionalities like creating incidents, assigning, res
 
 - **Incidents by State**
   
-  ![Incidents by State](screenshots/reports_by_state.png)
+  ![Incidents by State](screenshots/reports_incidents_per_day.png)
   
 - **Incidents Day by Day**
   
-  ![Incidents Per Day](screenshots/reports_incidents_per_day.png)
+  ![Incidents Per Day](screenshots/reports_by_state.png)
 
 ### 6. Dashboard View
 
