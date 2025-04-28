@@ -37,13 +37,14 @@ It covers basic Incident functionalities like creating incidents, assigning, res
 | Number             | String           | Auto-generated             |
 | Short Description  | String           | Mandatory                  |
 | Description        | String           |                            |
-| State              | Choice           | New, Assigned, In Progress, On Hold, Resolved, Closed |
+| State              | Choice           | New, Assigned, In Progress, Resolved, Closed |
 | Assigned To        | Reference (User) | User who is assigned       |
 | Impact             | Choice           | 1-High, 2-Moderate, 3-Low   |
 | Urgency            | Choice           | 1-High, 2-Moderate, 3-Low   |
 | Priority           | Integer          | Auto-calculated             |
 | Resolved By        | Reference (User) | Auto-populated when resolved |
 | Resolved At        | Date/Time        | Auto-populated when resolved |
+| Resolution Notes   | String           | Visible when state changes to Resolved |
 | Created By         | Reference (User) | Auto-populated             |
 | Created On         | Date/Time        | Auto-populated             |
 
@@ -88,7 +89,7 @@ It covers basic Incident functionalities like creating incidents, assigning, res
 
 ### 2. List View
 
-![Form View](screenshots/incident_list_view.png)
+![List View](screenshots/incident_list_view.png)
 
 ### 3. Form View
 
@@ -99,21 +100,21 @@ It covers basic Incident functionalities like creating incidents, assigning, res
 ![Business Rules](screenshots/business_rules.png)
 
 - **If State==Resolved**
-- 
-  ![Incidents Per Day](screenshots/br_set_resolved.png)
+  
+  ![If State==Resolved](screenshots/br_set_resolved.png)
   
 - **Setting Priority based on Urgency & Impact**
-- 
-  ![Incidents Per Day](screenshots/br_priority.png)
+  
+  ![Setting Priority based on Urgency & Impact](screenshots/br_priority.png)
 
 ### 5. Reports
 
 - **Incidents by State**
-- 
+  
   ![Incidents by State](screenshots/reports_by_state.png)
   
 - **Incidents Day by Day**
-- 
+  
   ![Incidents Per Day](screenshots/reports_incidents_per_day.png)
 
 ### 6. Dashboard View
