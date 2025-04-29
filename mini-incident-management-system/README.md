@@ -127,6 +127,28 @@ It covers basic Incident functionalities like creating incidents, assigning, res
 
 ---
 
+## ⚙️ Scheduled Flow to Auto-Close Incidents
+
+This flow checks daily for any incidents that are in the **Resolved** state for over 7 days and automatically changes their state to **Closed**.
+
+### 🔄 Flow Details:
+- **Trigger Type:** Scheduled (Daily)
+- **Conditions:**
+  - State is `Resolved`
+  - Resolved At is on or before Today - 7 days
+- **Action:** Update record to set State = `Closed`
+
+### 📸 Screenshots
+
+| Description             | Screenshot |
+|-------------------------|------------|
+| Flow Properties         | ![Flow Properties](screenshots/flow_designer_properties.png) |
+| Trigger Configuration   | ![Trigger](screenshots/flow_trigger_schedule.png) |
+| Condition Set           | ![Conditions](screenshots/flow_conditions.png) |
+| Action: Update State    | ![Update](screenshots/flow_action_update_state.png) |
+
+---
+
 ## 🔄 REST Integration Demo
 
 This project includes a basic REST integration using [webhook.site](https://webhook.site) to simulate sending incident data to an external endpoint.
