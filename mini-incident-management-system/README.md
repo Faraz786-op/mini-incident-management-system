@@ -142,8 +142,8 @@ This project includes a basic REST integration using [webhook.site](https://webh
 
 | Description                    | Screenshot |
 |-------------------------------|------------|
-| REST Message Config            | ![REST Message](screenshots/rest_message_config.png) |
-| HTTP Method Content & Header  | ![HTTP Method](screenshots/rest_message_http_method.png) |
+| REST Message Config with Header| ![REST Message](screenshots/rest_message_config.png) |
+| HTTP Method Content            | ![HTTP Method](screenshots/rest_message_http_method.png) |
 | Business Rule Script           | ![Business Rule](screenshots/business_rule_rest_call.png) |
 | Webhook Response Received      | ![Webhook](screenshots/webhook_response.png) |
 
