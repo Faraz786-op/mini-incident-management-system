@@ -127,10 +127,30 @@ It covers basic Incident functionalities like creating incidents, assigning, res
 
 ---
 
+## 🔄 REST Integration Demo
+
+This project includes a basic REST integration using [webhook.site](https://webhook.site) to simulate sending incident data to an external endpoint.
+
+### ✔️ How It Works
+- A REST Message is triggered via Business Rule whenever an incident is updated.
+- JSON payload is posted to an external endpoint with details like:
+  - Incident Number
+  - Short Description
+  - State
+
+### 📸 Screenshots
+
+| Description                    | Screenshot |
+|-------------------------------|------------|
+| REST Message Config            | ![REST Message](screenshots/rest_message_config.png) |
+| HTTP Method Content & Header  | ![HTTP Method](screenshots/rest_message_http_method.png) |
+| Business Rule Script           | ![Business Rule](screenshots/business_rule_rest_call.png) |
+| Webhook Response Received      | ![Webhook](screenshots/webhook_response.png) |
+
+
 ## 🎯 Future Enhancements
 
 - Add Flow Designer automation for Notifications.
-- Create REST APIs for Incident creation and retrieval.
 - Add SLAs for resolution times based on Impact/Urgency.
 - Create Service Catalog Item for submitting Mini Incidents.
 - Role-based access control (ACLs).
