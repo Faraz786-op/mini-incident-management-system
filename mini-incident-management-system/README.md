@@ -149,6 +149,22 @@ This flow checks daily for any incidents that are in the **Resolved** state for 
 
 ---
 
+## 💡 Feature: Auto-Set Description via Category (GlideAjax + Script Include)
+
+This feature demonstrates the use of **Client Script** and **Script Include** with GlideAjax.
+
+- When the **Category** field is changed, a client script sends the selected value to the Script Include using `GlideAjax`.
+- The Script Include returns a default description for that category.
+- The client script sets the returned value to the **Description** field.
+
+📁 Files:
+- `/ScriptInclude-GlideAjax/CategoryHelper.js`
+- `/ScriptInclude-GlideAjax/CategoryClientScript.js`
+
+🔁 Technologies Used: GlideAjax, Script Include, Client Script (onChange)
+
+---
+
 ## 🔄 REST Integration Demo
 
 This project includes a basic REST integration using [webhook.site](https://webhook.site) to simulate sending incident data to an external endpoint.
@@ -169,6 +185,7 @@ This project includes a basic REST integration using [webhook.site](https://webh
 | Business Rule Script           | ![Business Rule](screenshots/business_rule_rest_call.png) |
 | Webhook Response Received      | ![Webhook](screenshots/webhook_response.png) |
 
+---
 
 ## 🎯 Future Enhancements
 
