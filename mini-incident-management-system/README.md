@@ -24,11 +24,15 @@ It covers basic Incident functionalities like creating incidents, assigning, res
 
 ## 🏗️ Technologies Used
 
-- **ServiceNow** (Yokohama version)
-- **Flow Designer / Business Rules**
-- **Email Notifications**
-- **Reports and Dashboards**
-- **GitHub** for version control
+- **ServiceNow (Yokohama Version)** – Platform for building and deploying the Mini Incident Management System
+- **Custom Tables & Forms** – Created `u_mini_incident` table with custom fields and UI Policies
+- **Business Rules** – Server-side logic to automate state changes and data updates
+- **Flow Designer** – No-code automation to schedule incident closure after resolution
+- **Client Scripts + Script Includes (GlideAjax)** – Dynamic field updates using client-server communication
+- **Email Notifications** – Triggered to assigned users for status awareness
+- **Reports & Dashboards** – Visual representation of incidents by State and Days
+- **GitHub** – Version control and project documentation
+- **REST Outbound Integration (Demo)** – Demonstrated basic REST API call from ServiceNow
 
 ---
 
