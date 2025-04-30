@@ -5,49 +5,6 @@ It covers basic Incident functionalities like creating incidents, assigning, res
 
 ---
 
-### 🚀 Features
-
-#### ✅ Core Functionality
-- **Create and Track Incidents**
-  - Custom table `u_mini_incident`
-  - Auto-incremented `Number` field for each incident
-  - Fields: Short Description, Description, Category, Impact, Urgency, Priority, Assigned To, State, Resolution Notes, etc.
-  - Mandatory and Read-only fields based on state using UI Policies
-
-- **Priority Calculation Logic**
-  - Automatically sets `Priority` based on combinations of `Impact` and `Urgency` (High, Moderate, Low)
-
-#### 🧠 Business Rules
-- On **Insert**, set the State to **"New"**
-- If **Assigned To is populated** and State is still **"New"**, automatically change it to **"In Progress"**
-- When **Resolution Notes** are filled, automatically set State to **"Resolved"**
-- On update, if **State changes to Resolved**, set the **Resolved By** and **Resolved At** fields
-
-#### 📊 Dashboard and Reporting
-- Two reports created:
-  - Incidents by Category
-  - Incidents by State
-- Added both reports to a **custom Dashboard**
-
-#### 📬 Notifications
-- Email notification sent to Assigned User when they are assigned to an incident
-- Email can be seen in the Outbox for testing
-
-#### ⏳ Automation with Flow Designer
-- When an incident is **Resolved**, a Flow runs and sets the state to **Closed** after 7 days automatically
-
-#### 🧠 GlideAjax + Script Include Functionality
-- Feature: **Auto-populate Description based on selected Category**
-  - Client Script triggers on Category change
-  - Sends selected Category to Script Include via `GlideAjax`
-  - Script Include returns a description text which gets populated in the Description field
-
-📁 Related Files:
-- `/ScriptInclude-GlideAjax/CategoryHelper.js`
-- `/ScriptInclude-GlideAjax/CategoryClientScript.js`
-
----
-
 ## 🛠️ Features
 
 - Create and manage Mini Incidents.
@@ -59,6 +16,8 @@ It covers basic Incident functionalities like creating incidents, assigning, res
   - Incidents Created per Day
   - Incidents by State
 - Dashboard displaying both reports.
+- Sets the state to Closed after 7 days automatically with Flow Designer.
+- Auto-populate Description based on selected Category using GlideAjax + Script Include Functionality.
 - GitHub version-controlled project with documentation and screenshots.
 
 ---
